@@ -1,0 +1,166 @@
+* {
+    direction: rtl;
+    font-family: "cairo";
+    list-style: none;
+}
+
+html {
+    background-color: #17283B;
+    padding: 0px 4%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: #efebe5;
+
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    gap: 40px;
+    border-radius: 8px;
+}
+
+.slider-container {
+    width: 50%;
+}
+
+#demo {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px #191919;
+}
+
+#demo img {
+    display: block !important;
+}
+
+.line {
+    display: block;
+    width: 5px;
+    height: 38vw;
+    background-color: #DFBD65;
+    border-radius: 5px;
+}
+
+.container-fluid {
+    padding: 0%;
+}
+
+.container-fluid h3 {
+    border-bottom: solid 3px #DFBD65 !important;
+    width: fit-content;
+    padding: 20px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+
+.container-fluid p {
+    font-size: 18px;
+    margin-bottom: 0px !important;
+    color: #383838;
+}
+
+.links {
+    flex-grow: 1;
+    box-shadow: 0px 0px 4px #4e4e4e8c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.links li {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 2px #4e4e4e8c;
+    transition: .2s;
+    position: relative;
+}
+
+.links li a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 3;
+}
+
+.links li i {
+    margin-left: 5px;
+}
+
+.links li:hover {
+    background-color: #f0f0f0;
+    color: #d1990d;
+}
+
+.links li p {
+    margin: 0%;
+}
+
+ul {
+    padding: 0% !important;
+    margin: 0px !important;
+}
+
+
+@media (min-width:600px) and (max-width:900px) {
+
+    html {
+        padding: 70px;
+    }
+
+    body {
+        justify-content: center;
+        padding: 35px;
+    }
+
+    body .line {
+        height: 5px;
+        width: 45% !important;
+    }
+
+    body .slider-container {
+        width: 100% !important;
+    }
+
+    body .links {
+        flex-grow: 0 !important;
+        width: 100% !important;
+    }
+
+    body .line {
+        display: none;
+    }
+}
+
+@media (min-width:0px) and (max-width:599px) {
+    html {
+        padding: 25px;
+    }
+
+    body {
+        justify-content: center;
+        padding: 25px;
+    }
+
+    body .line {
+        display: none;
+    }
+
+    body .slider-container {
+        width: 100% !important;
+    }
+
+    body .links {
+        flex-grow: 0 !important;
+        width: 100% !important;
+    }
+}
