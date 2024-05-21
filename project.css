@@ -4,17 +4,17 @@
     list-style: none;
 }
 
-html {
+/* html {
     background-color: #17283B;
     padding: 0px 4%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-}
+} */
 
 body {
-    background-color: #efebe5;
+    background-color: #fff;
 
     overflow: auto;
     display: flex;
@@ -37,6 +37,7 @@ body {
 
 #demo img {
     display: block !important;
+    
 }
 
 .line {
@@ -113,9 +114,9 @@ ul {
 
 @media (min-width:600px) and (max-width:900px) {
 
-    html {
+    /* html {
         padding: 70px;
-    }
+    } */
 
     body {
         justify-content: center;
@@ -142,9 +143,9 @@ ul {
 }
 
 @media (min-width:0px) and (max-width:599px) {
-    html {
+    /* html {
         padding: 25px;
-    }
+    } */
 
     body {
         justify-content: center;
